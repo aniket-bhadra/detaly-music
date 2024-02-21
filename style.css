@@ -1,23 +1,88 @@
-div{
-    width: 100px;
-    height: 400px;
-    background-color: violet;
+*{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container{
+    height: 100dvh;
+    width: 100%;
+    background-image: url(assets/bg-img.jpg);
+    background-size: cover;
+    background-position: center;
     position: relative;
 }
-/* p{
-    background-color: burlywood;
-    width: 20px;
-    height: 50px;
+.navbar{
+    width: 88%;
+    margin: auto;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-    padding: 50%;
-} */
+.logo{
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.6);
+    position: relative;
+}
 
-p{
-    background-color: red;
-    width: 300px;
-    padding: 20%;
-    margin:50%;
+.logo span{
+    font-weight: 900;
+    font-size: 1.5rem;
     position: absolute;
-    left: 50px;
-    top: 200px;
+    left: -7px;
+    bottom: -14px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 15px;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-col{
+    margin-left: 6%;
+}
+.left-col h1{
+    font-size: 90px;
+    color: #fff;
+    line-height: 110px;
+    /* float: left; */
+}
+
+.right-col{
+    /* float: right; */
+    margin-right: 4%;
+    /* margin-top: 120px; */
+    display: flex;
+    align-items: center;
+}
+
+.right-col p{
+    font-size: 18px;
+    color: #5f5f5f5f;
+    font-weight: 400;
+    margin-right: 15px;
+}
+
+
+#icon{
+    width: 230px;
+    height: 230px;
+    cursor: pointer;
 }
