@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>play music</title>
+    <title>detaly music</title>
     <script
       src="https://kit.fontawesome.com/f1e02b94da.js"
       crossorigin="anonymous"
@@ -14,7 +14,6 @@
   <body>
     <div class="container">
       <div class="navbar">
-        <!-- <img src="assets/logo1.png" alt="logo" class="logo" /> -->
         <div class="logo">
           <i class="fa-regular fa-heart fa-3x"></i><span>detaly</span>
         </div>
@@ -27,11 +26,19 @@
 
       <div class="content">
         <div class="left-col">
-          <h1>
+          <h1 id="main-heading">
             REAL <br />
-            SOUND <br />
+            <div class="animating-volumes">
+              <div class="loading-wave">
+                <div class="loading-bar"></div>
+                <div class="loading-bar"></div>
+                <div class="loading-bar"></div>
+                <div class="loading-bar"></div>
+              </div>
+            </div>
+            <span id="sound-text"> SOUND <br /></span>
             TRIP
-          </h1> 
+          </h1>
         </div>
         <div class="right-col">
           <p id="text">Listen Up Now</p>
